@@ -29,6 +29,9 @@ const makeChange = (c) => {
 	    i++
 	   
 	}
+	 if (s > 0) {
+    ansobj["p"] += Math.round(s * 100); // Round remaining cents to nearest penny
+  }
 	return ansobj
 };
 
